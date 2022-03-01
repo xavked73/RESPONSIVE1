@@ -1,0 +1,195 @@
+/***************** GENERAL *****************/
+body{
+	margin: 0;
+	padding: 0;
+	color: #333;
+	font: 1em/1.2 Helvetica, Arial, Geneva, sans-serif;
+}
+p{ line-height: 1.5; margin: 0; }
+a:link { color: #337ab7; text-decoration: none; }
+a:visited { color: #002366; }
+a:focus { color: #000; }
+a:hover { text-decoration: underline; }
+a:active { color: #f43c80; }
+hr{
+	margin: 1em 0 2em 0;
+	border: 0;
+	border-top: 1px solid #ddd;
+}
+table{
+	border-collapse: collapse;
+	border-top: 1px solid #ddd;
+	width: 100%;
+	max-width: 100%;
+	margin-bottom: 20px;
+}
+th, td{
+	padding: 0.5em 1em;
+	vertical-align: top;
+	text-align: left;
+	border-bottom: 1px solid #ddd;
+}
+.container{
+	max-width: 70em;
+	margin: 0 auto;
+}
+.clear{ clear: both; }
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 500;
+    margin: 0 0 0.5em;
+}
+.img-responsive { max-width: 100%; }
+/***************** GENERAL *****************/
+/***************** HAUT *****************/
+header { 
+padding: 1em 3em;
+min-height: 30px; 
+background: #dedede;
+}
+.header-slogan , .header-droite { padding: 0.3em 0 0 0; }
+.header-logo{
+	float: left;
+	margin-bottom: 1em;
+	margin-right: 5%;
+	width: 30%;
+}
+h1.header-nom-site { margin: 0; font-size: 1.5em; }
+.header-slogan
+{
+	float: left;
+	width: 30%;
+	margin-bottom: 1em;
+	margin-right: 5%;
+	text-align: center;
+}
+.header-droite
+{
+	float: left;
+	width: 30%;
+	text-align: right;
+}
+/***************** HAUT *****************/
+/***************** MENU *****************/
+nav{
+	background: #555;
+	text-align: center;
+	min-height: 30px; 
+}
+nav  ul{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+nav  ul li{
+	display: inline;
+	margin: 0;
+}
+
+nav  ul li  a{
+	display:inline-block; 
+	text-decoration: none;
+	padding: 0 2em;
+	color: #fff !important;
+	min-height: 30px; 
+	line-height: 30px;
+}
+nav  ul a:hover{
+	background: #337ab7;
+	text-decoration: none;
+}
+/***************** MENU *****************/
+/***************** CONTENU *****************/
+section{ padding: 1em;}
+main
+{
+	float: left;
+	width: 65%;
+	margin-right: 5%;
+	margin-bottom: 1em;
+}
+aside
+{
+	float: left;
+	width: 30%;
+	margin-bottom: 1em;
+}
+/***************** CONTENU *****************/
+/***************** BAS *****************/	
+footer
+{
+	color: #fff;
+	background: #555;
+	padding: 1em 1.25em;
+}
+/***************** BAS *****************/
+/***************** RESPONSIVE TABLETTE *****************/
+@media (max-width: 60em)
+{	/* une seule colonne (one column page) */
+	body:before{ background: #fda500; content: "responsive version tablette"; position: absolute; color: #fff; padding: 2px; font-size: 12px; }
+	main{ width: 100%; }
+	aside{ width: 100%; }
+}
+/***************** RESPONSIVE TABLETTE *****************/
+/***************** RESPONSIVE SMARTPHONE *****************/
+@media (max-width: 36em)
+{	/* width 100% pour les éléments du header et du menu (full width) */
+	body:before{ background: #337ab7; content: "responsive version smartphone"; position: absolute; color: #fff; padding: 2px; font-size: 12px; }
+	.header-logo{ width: 100%; text-align: left; }
+	.header-slogan{ width: 100%; text-align: left; }
+	.header-droite{ width: 100%; text-align: left; }
+	nav  ul li  a{ display: block; border-bottom: 1px solid #c0c0c0; text-align: left; }
+}
+/* @media (min-width: 768px) {	  ...	} // régle pour les affichage inférieur a 768px de large */
+/* @media (min-width: 992px) {	  ...	} // régle pour les affichage inférieur a 992px de large */
+/* @media (min-width: 1200px) {  ...	} // régle pour les affichage inférieur a 1200px de large */
+/* @media (max-width: 768px) {	  ...	} // régle pour les affichage supérieur a 768px de large */
+/* @media (max-width: 992px) {	  ...	} // régle pour les affichage supérieur a 992px de large */
+/* @media (max-width: 1200px) {  ...	} // régle pour les affichage supérieur a 1200px de large */
+/* @media (min-width: 768px) and (max-width: 992px) { … } // régle pour les affichage supérieur a 768px et inférieur a 992px de large */
+/***************** RESPONSIVE SMARTPHONE *****************/
+/***************** REPRISE FACULTATIVE *****************/
+.list-unstyled{
+	padding-left: 0;
+	list-style: none;
+}
+.list-inline{
+	padding-left: 0;
+	margin-left: -5px;
+	list-style: none;
+}
+.list-inline > li{
+	display: inline-block;
+	padding-right: 5px;
+	padding-left: 5px;
+}
+.btn{	
+	color: #fff !important;
+	background-color: royalblue;
+	border-color: #222;
+	display: inline-block;
+	padding: .5em 1em;
+	margin-bottom: 0;
+	font-weight: 400;
+	line-height: 1.2;
+	text-align: center;
+	white-space: nowrap;
+	vertical-align: middle;
+	cursor: pointer;
+	border: 1px solid transparent;
+	border-radius: .2em;
+	text-decoration: none;
+}
+.btn:hover{
+	color: #fff !important;
+	background-color: #111;
+}
+.btn:focus{
+	color: #fff !important;
+	background-color: #fda500;
+}
+.btn:active{
+	color: #fff !important;
+	background-color: #f43c80;
+}
+/***************** REPRISE FACULTATIVE *****************/

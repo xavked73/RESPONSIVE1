@@ -1,0 +1,13 @@
+body{
+
+    background: #fc3737;
+}
+#zone{
+
+    border:2px solid;
+    width: 1000px;
+    height:880px
+}
+#zone p{
+
+    font-size: 15px}

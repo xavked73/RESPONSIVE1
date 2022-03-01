@@ -1,0 +1,60 @@
+#conteneur{
+    border:2px solid;
+    margin:0 auto;
+    width: 80%;/* ici on indique en % en fonction de la taille de la fenetre*/
+    max-width:1200px;
+    font-size:1.2vw;/* vw spécifie une mesure en fonction de la taille de la fenetre*/
+}
+header{
+    background: #ff8000;
+    height:15vh;
+}
+p
+{margin:0;}
+
+nav{background: #000080;
+    height:5vh;}
+
+section{
+    background:#16f787;
+margin:2%;
+} 
+footer{
+    background:rgb(155, 110, 110);
+    height: 7.5vh;
+} 
+ 
+.a{
+    float:left;
+    width:50%;
+    height:28vh;
+    background:red;
+}
+    
+.b{
+    float:left;
+    width:50%;
+    height:28vh;
+    background:rgb(4, 255, 255);
+}
+ 
+.c{
+    float:left;
+    width:50%;
+    height:28vh;
+    background:rgb(195, 255, 0);
+}
+    
+.d{
+    float:left;
+    width:50%;
+    height:28vh;
+    background:rgb(132, 0, 255);
+}
+  
+.clear{ clear:both;}
+@media screen and (max-width: 950px){
+    #conteneur{
+        font-size:2px;
+    }
+}
